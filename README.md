@@ -7,7 +7,7 @@ Welcome to my automation portfolio. As an **IT Automation Engineer**, I focus on
 
 ## 🚀 Featured Projects
 
-### 1. [Automated Tax Integration (Zoho Books to Government Portal)](.Automated%20Client%20Document%20Expiry%20Reminder%20System/README.md)
+### 1. [Automated Tax Integration (Zoho Books to Government Portal)](./Automated%20Client%20Document%20Expiry%20Reminder%20System/README.md)
 **Tools:** Power Automate, Zoho Books API, Excel Online, SharePoint.
 * Automated the extraction of tax data from Zoho Books.
 * Generated standardized Excel reports ready for `.xml` conversion.
