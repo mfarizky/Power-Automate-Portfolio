@@ -14,10 +14,10 @@ I developed a scheduled automation workflow using **Power Automate** that acts a
 * **Integrations:** Microsoft SharePoint Online and Outlook (Shared Mailbox).
 
 ## **Workflow Overview**
+![alt text](image.png)
 
 1. **Daily Recurrence Trigger**
 The flow is set to trigger automatically every morning, ensuring that no document expiry is missed.
-![recurrence-trigger](image_ee6f69.png)
 
 2. **Parallel Expiry Monitoring**
 To optimize efficiency, the system uses parallel branches to query the SharePoint Document Library:
