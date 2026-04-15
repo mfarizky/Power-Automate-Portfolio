@@ -8,7 +8,8 @@ I developed an automated archiving workflow using **Power Automate** that monito
 
 ## **Technology**
 * **Trigger:** `When a new email arrives in a shared mailbox (V2)` (Outlook).
-* **Logic & Control:** * **Condition:** Subject-based filtering (Checking if the subject contains the keyword "Completed").
+* **Logic & Control:**
+    * **Condition:** Subject-based filtering (Checking if the subject contains the keyword "Completed").
     * **Apply to Each (Loop):** Iterating through all email attachments to ensure multiple signed files are processed individually.
 * **Integrations:** Microsoft Outlook (Shared Mailbox) and SharePoint Online.
 
