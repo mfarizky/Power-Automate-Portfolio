@@ -8,7 +8,8 @@ I developed a scheduled automation workflow using **Power Automate** that acts a
 
 ## **Technology**
 * **Trigger:** `Recurrence` (Scheduled to run daily).
-* **Logic & Control:** * **Parallel Branching:** Executing two simultaneous tracks to check for different expiry thresholds (60 days vs. 30 days).
+* **Logic & Control:** 
+    * **Parallel Branching:** Executing two simultaneous tracks to check for different expiry thresholds (60 days vs. 30 days).
     * **OData Filtering:** Efficiently querying SharePoint items using filter queries to target only relevant expiry dates.
     * **Apply to Each (Loops):** Iterating through the list of identified clients to send individual reminders.
 * **Integrations:** Microsoft SharePoint Online and Outlook (Shared Mailbox).
