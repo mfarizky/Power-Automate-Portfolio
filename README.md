@@ -1,7 +1,7 @@
 # IT Automation & Productivity Portfolio
-### Specialized in Microsoft Power Platform & Business Process Optimization
+### Specialized in Microsoft Power Automate & Business Process Optimization
 
-Welcome to my automation portfolio. As an **IT Consultant & Developer**, I focus on streamlining business operations by integrating cloud ecosystems like **Zoho Books**, **Microsoft 365**, and **SharePoint**. My goal is to eliminate manual bottlenecks and ensure high data integrity through smart automation.
+Welcome to my automation portfolio. As an **IT Automation Engineer**, I focus on streamlining business operations by integrating cloud ecosystems like **Zoho Books**, **Microsoft 365**, and **SharePoint**. My goal is to eliminate manual bottlenecks and ensure high data integrity through smart automation.
 
 ---
 
