@@ -9,7 +9,8 @@ I designed and built an automation workflow using **Power Automate** that connec
 ## **Technology**
 * **ERP System:** Zoho Books (API Integration).
 * **Triggers:** `When an item is created or modified` in SharePoint (serving as the execution controller).
-* **Logic & Control:** * **Web Service (REST API):** Utilized HTTP actions for Refreshing Access Tokens to ensure a secure Zoho connection.
+* **Logic & Control:**
+    * **Web Service (REST API):** Utilized HTTP actions for Refreshing Access Tokens to ensure a secure Zoho connection.
     * **Switch Case:** Segmented data processing logic based on Zoho transaction types (Bills, Vendor Payments, Journal).
     * **Variables:** Managed Account IDs, Org IDs, and dynamic file naming conventions.
 * **Integrations:** Microsoft SharePoint, Excel Online (Business), and Power Automate.
