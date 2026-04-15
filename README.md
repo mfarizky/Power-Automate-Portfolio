@@ -7,19 +7,19 @@ Welcome to my automation portfolio. As an **IT Automation Engineer**, I focus on
 
 ## 🚀 Featured Projects
 
-### 1. [Automated Tax Integration (Zoho Books to Government Portal)](./Project1_Tax_Automation.md)
+### 1. [Automated Tax Integration (Zoho Books to Government Portal)](./README.md)
 **Tools:** Power Automate, Zoho Books API, Excel Online, SharePoint.
 * Automated the extraction of tax data from Zoho Books.
 * Generated standardized Excel reports ready for `.xml` conversion.
 * **Result:** Reduced data preparation time from hours to minutes with zero human error.
 
-### 2. [Automated Signed Document Archiving](./Project2_Signature_Archiving.md)
+### 2. [Automated Signed Document Archiving](.//README.md)
 **Tools:** Power Automate, Outlook (Shared Mailbox), SharePoint.
 * Automatically detects digitally signed documents from email CCs.
 * Filters emails by "Completed" status and extracts PDF attachments.
 * **Result:** Created a 100% automated audit trail for legal and tax documents.
 
-### 3. [Client Document Expiry Reminder System](./Project3_Expiry_Reminder.md)
+### 3. [Client Document Expiry Reminder System](./README.md)
 **Tools:** Power Automate (Scheduled), SharePoint, Shared Mailbox.
 * Proactive monitoring of document expiration dates using parallel branching.
 * Automatic email notifications at 60-day and 30-day intervals.
