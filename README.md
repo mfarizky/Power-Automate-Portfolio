@@ -28,9 +28,8 @@ Welcome to my automation portfolio. As an **IT Automation Engineer**, I focus on
 ---
 
 ## 🛠 Technical Toolbox
-* **Platforms:** Power Automate (DPA), Power Apps, SharePoint Online.
+* **Platforms:** Power Automate, SharePoint Online, Zoho Books
 * **Integrations:** Zoho Books API (OAuth2), Microsoft Graph API, REST Web Services.
-* **Scripting:** PowerShell, PHP (WordPress customization).
 * **Data:** Excel Power Query, OData Filtering, JSON Transformation.
 
 ---
