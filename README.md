@@ -45,8 +45,8 @@ Welcome to my automation portfolio. As an **IT Automation Engineer**, I focus on
 
 ## 📫 Connect with Me
 * **Location:** Lombok, West Nusa Tenggara, Indonesia.
-* **Role:** IT Consultant / Automation Developer.
+* **Role:** IT Consultant / Automation Engineer.
 * **Focus:** Helping businesses scale through efficiency.
 
 ---
-*Created with ❤️ by Rizky*
+*Created by Rizky*
