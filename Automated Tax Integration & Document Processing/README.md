@@ -1,4 +1,4 @@
-# Project: Automated Tax Integration [Zoho Books to Coretax (Indonesian Government Tax Portal)]
+# Project: Automated Tax Integration - Zoho Books to Coretax (Indonesian Government Tax Portal)
 
 ## **Problem/Challenge**
 Seorang *Tax Accountant* sebelumnya harus melakukan input data secara manual dari sistem akuntansi ke situs web pemerintah untuk pelaporan pajak. Proses ini tidak hanya memakan waktu yang lama tetapi juga sangat berisiko terhadap kesalahan input data (*human error*). Tantangan utamanya adalah mengekstraksi data transaksi yang relevan secara otomatis dan mentransformasikannya ke dalam format Excel yang kompatibel untuk diekspor menjadi file `.xml` (e-Faktur/e-Bupot) agar siap diunggah ke portal pajak.
