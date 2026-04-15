@@ -1,41 +1,44 @@
-# Project: Automated Tax Integration - Zoho Books to Coretax (Indonesian Government Tax Portal)
+# Project: Automated Tax Integration (Zoho Books to Government Portal)
 
 ## **Problem/Challenge**
-Seorang *Tax Accountant* sebelumnya harus melakukan input data secara manual dari sistem akuntansi ke situs web pemerintah untuk pelaporan pajak. Proses ini tidak hanya memakan waktu yang lama tetapi juga sangat berisiko terhadap kesalahan input data (*human error*). Tantangan utamanya adalah mengekstraksi data transaksi yang relevan secara otomatis dan mentransformasikannya ke dalam format Excel yang kompatibel untuk diekspor menjadi file `.xml` (e-Faktur/e-Bupot) agar siap diunggah ke portal pajak.
+A Tax Accountant previously had to manually input data from the accounting system into the government website for tax reporting. This process was not only time-consuming but also highly susceptible to human error. The primary challenge was to automatically extract relevant transaction data and transform it into a compatible Excel format to be exported as .xml files (e-Faktur/e-Bupot) for direct upload to the tax portal.
 
 ## **Solution**
-Saya merancang dan membangun alur kerja otomatisasi menggunakan **Power Automate** yang menghubungkan **Zoho Books** dengan ekosistem Microsoft 365. Solusi ini secara otomatis mengambil data organisasi, daftar akun (*Chart of Accounts*), dan detail transaksi, kemudian mengolahnya menggunakan logika kondisi untuk mengisi template laporan pajak secara akurat.
+I designed and built an automation workflow using **Power Automate** that connects **Zoho Books** with the Microsoft 365 ecosystem. This solution automatically retrieves organizational data, the Chart of Accounts, and transaction details, then processes them using conditional logic to accurately populate tax report templates.
 
 ## **Technology**
 * **ERP System:** Zoho Books (API Integration).
-* **Triggers:** `When an item is created or modified` di SharePoint (sebagai pengontrol eksekusi).
-* **Logic & Control:** * **Web Service (REST API):** Menggunakan aksi HTTP untuk *Refreshing Access Tokens* Zoho demi keamanan koneksi.
-    * **Switch Case:** Memisahkan logika pemrosesan data berdasarkan tipe transaksi Zoho (Bills, Vendor Payments, Journal).
-    * **Variables:** Pengelolaan ID Akun, ID Organisasi, dan penamaan file dinamis.
-* **Integrations:** Microsoft SharePoint, Excel Online (Business), dan Power Automate.
+* **Triggers:** `When an item is created or modified` in SharePoint (serving as the execution controller).
+* **Logic & Control:** * **Web Service (REST API):** Utilized HTTP actions for Refreshing Access Tokens to ensure a secure Zoho connection.
+    * **Switch Case:** Segmented data processing logic based on Zoho transaction types (Bills, Vendor Payments, Journal).
+    * **Variables:** Managed Account IDs, Org IDs, and dynamic file naming conventions.
+* **Integrations:** Microsoft SharePoint, Excel Online (Business), and Power Automate.
 
 ## **Workflow Overview**
-1.  **Authentication:** Flow dimulai dengan melakukan *refresh access token* Zoho Books untuk memastikan sesi API tetap aktif dan aman.
+1.  **Authentication:** The flow begins by refreshing the Zoho Books access token to ensure the API session remains active and secure.
 
     ![alt text](1.png)
 
-2.  **Organization Sync:** Menarik data profil organisasi dan *Chart of Accounts* dari Zoho untuk memastikan pemetaan akun pajak sudah benar.
+2.  **Organization Sync:** Retrieves organizational profile data and the Chart of Accounts from Zoho to ensure accurate tax account mapping.
 
-3.  **Dynamic File Handling:** Sistem mengecek apakah file laporan untuk periode tersebut sudah ada di SharePoint. Jika belum, flow akan membuat file baru berdasarkan template master.
+3.  **Dynamic File Handling:** The system checks if the report file for the current period exists in SharePoint. If not, the flow creates a new file based on a master template.
 
     ![alt text](2.png)
 
 4.  **Transaction Sorting (Switch Case):**
-    * **Case Bills:** Mengambil data tagihan masuk dari Zoho Books.
-    * **Case Vendor Payments:** Mengambil data pembayaran ke vendor.
-    * **Case Journal:** Menarik data penyesuaian jurnal umum.
+    * **Case Bills:** Fetches incoming bill data from Zoho Books.
+    * **Case Vendor Payments:** Processes payment data to vendors.
+    * **Case Journal:** Retrieves general journal adjustment entries.
 
-5.  **Data Consolidation:** Setiap baris transaksi dimasukkan ke dalam tabel Excel menggunakan aksi *Add a row into a table*, yang sudah diformat agar siap dikonversi menjadi `.xml`.
+5.  **Data Consolidation:** Each transaction row is inserted into an Excel table using the "Add a row into a table" action, formatted specifically for .xml conversion.
 
     ![alt text](3.png)
 
 
 ## **Impact**
-* **Time Efficiency:** Memangkas waktu persiapan data pajak dari yang sebelumnya berjam-jam menjadi hitungan menit.
-* **Data Integrity:** Memastikan data yang ada di pelaporan pajak 100% sinkron dengan data yang tercatat di Zoho Books.
-* **Standardization:** Menciptakan proses pelaporan yang terstruktur dan dapat diulang (*repeatable*) setiap bulannya tanpa bergantung pada input manual.
+* **Time Efficiency:** Reduced tax data preparation time from several hours to just a few minutes.
+* **Data Integrity:** Ensured 100% synchronization between tax reporting and the records in Zoho Books.
+* **Standardization:** Created a structured and repeatable reporting process every month without relying on manual input.
+
+
+**Author:** Rizky
